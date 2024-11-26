@@ -23,6 +23,7 @@ const modificarVehiculo = async () => {
             UPDATE vehiculos 
             SET marca = $1, modelo = $2, patente = $3
             WHERE id = $4
+            
         `;
 
         const [_marca, _modelo, _patente, _id] = process.argv.splice(2);
